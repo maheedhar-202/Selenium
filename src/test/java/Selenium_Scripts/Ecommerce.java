@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Ecommerce {
+	// updating selenium scrip updated in testing branch
 	public WebDriver driver;
 	
 	@BeforeClass
