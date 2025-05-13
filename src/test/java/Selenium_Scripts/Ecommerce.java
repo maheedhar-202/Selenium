@@ -36,6 +36,7 @@ public class Ecommerce {
 		List<WebElement> products = driver.findElements(By.xpath("//*[@class='CGtC98']"));
 		for(int i=1;i<=5;i++) {
 			Thread.sleep(10);
+			//Testing
 			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 	        jsExecutor.executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", driver.findElement(By.xpath("(//*[@class='CGtC98'])["+i+"]/div[2]/div[1]/div[1]")));
 			String ProductNames = driver.findElement(By.xpath("(//*[@class='CGtC98'])["+i+"]/div[2]/div[1]/div[1]")).getText();
